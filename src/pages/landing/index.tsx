@@ -1,3 +1,4 @@
+import Divider from "components/Divider";
 import React from "react";
 import AboutPart from "./AboutPart";
 import BenefitPart from "./BenefitPart";
@@ -13,6 +14,7 @@ const LandingPage = () => {
       <AboutPart />
       <ServicePart />
       <BenefitPart />
+      <Divider />
       <FooterPart />
     </div>
   );

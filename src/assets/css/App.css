@@ -71,4 +71,6 @@ p {
 }
 
 .landing-divider {
+  background: linear-gradient(to left, #2447ad, #0386ff);
+  padding: 15px 0;
 }
