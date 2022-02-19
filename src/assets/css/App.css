@@ -59,3 +59,16 @@ p {
   font-family: "Futura Std Book" !important;
   font-weight: 600;
 }
+
+.landing-footer {
+  color: #1d2127;
+}
+
+.landing-footer > p {
+  margin-bottom: 20px;
+  font-size: 14px !important;
+  line-height: 24px;
+}
+
+.landing-divider {
+}

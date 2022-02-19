@@ -1,6 +1,7 @@
 import React from "react";
 import AboutPart from "./AboutPart";
 import BenefitPart from "./BenefitPart";
+import FooterPart from "./FooterPart";
 
 import IntroPart from "./IntroPart";
 import ServicePart from "./ServicePart";
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <AboutPart />
       <ServicePart />
       <BenefitPart />
+      <FooterPart />
     </div>
   );
 };
