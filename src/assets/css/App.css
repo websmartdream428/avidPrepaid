@@ -82,3 +82,25 @@ p {
   background-position-y: 22em;
   background-size: 42%;
 }
+.card-img {
+  max-width: 25em;
+  position: absolute;
+  right: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.landing-get-started {
+  padding-top: 2%;
+}
+
+@media screen and (max-width: 1700px) {
+  .card-img {
+    transform: none;
+    right: 0;
+    position: relative;
+  }
+  .landing-get-started {
+    padding-top: 0;
+  }
+}
