@@ -74,3 +74,11 @@ p {
   background: linear-gradient(to left, #2447ad, #0386ff);
   padding: 15px 0;
 }
+
+.landing-support {
+  background-image: url("../image/dots-copy.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 22em;
+  background-size: 42%;
+}

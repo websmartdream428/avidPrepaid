@@ -6,6 +6,7 @@ import FooterPart from "./FooterPart";
 
 import IntroPart from "./IntroPart";
 import ServicePart from "./ServicePart";
+import SupportPart from "./SupportPart";
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
       <AboutPart />
       <ServicePart />
       <BenefitPart />
+      <SupportPart />
       <Divider />
       <FooterPart />
     </div>
