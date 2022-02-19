@@ -26,3 +26,10 @@ h1,
 p {
   font-family: Futura Std Book !important;
 }
+
+.landing-about {
+  background-image: url("../image/dots-copy.png");
+  background-repeat: no-repeat;
+  background-position-y: 23.5em;
+  background-size: 42%;
+}
