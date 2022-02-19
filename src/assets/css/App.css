@@ -33,3 +33,13 @@ p {
   background-position-y: 23.5em;
   background-size: 42%;
 }
+
+.service-card-list > li {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 0;
+  color: #1d2127;
+  padding-top: 3px;
+  font-family: "Futura Std Book" !important;
+}
