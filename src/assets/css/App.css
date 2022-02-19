@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Futura Std Book";
+  src: url("../fonts/FontsFree-Net-FuturaStd-Book.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing-intro {
+  background: url("../image/landing-header.png");
+  background-size: cover;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+  background-color: rgb(3, 134, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing-header::after,
+.landing-header::before {
+  display: table;
+  content: " ";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo-img {
+  filter: invert(1);
+  width: 9.5em;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,
+p {
+  font-family: Futura Std Book !important;
 }
