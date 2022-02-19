@@ -43,3 +43,19 @@ p {
   padding-top: 3px;
   font-family: "Futura Std Book" !important;
 }
+
+.landing-benefits {
+  background: #0386ff;
+  background-image: url("../image/RectangleDots.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.benefit-card-list > *:not(:last-child) {
+  padding-bottom: 5%;
+}
+
+.benefit-card-list > li {
+  font-family: "Futura Std Book" !important;
+  font-weight: 600;
+}
