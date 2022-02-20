@@ -21,13 +21,13 @@ const FaqPart = () => {
           <h1 className="text-center mt-[5%] font-extrabold text-[#0386ff] text-[2.4em] leading-][44px] mb-8 -tracking-[1px]">
             Lets Get Started
           </h1>
-          <div className="flex justify-center gap-[45px]">
+          <div className="md:flex-row flex-col flex items-center justify-center md:gap-[45px] gap-[20px]">
             <input
               type="text"
               placeholder="Enter Mobile Number"
               className="border-[#0386ff] border-[1px] h-[50px] outline-none bg-white text-black text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#0386ff]"
             />
-            <div className="border-[1px] border-[#0386ff] bg-[#0386ff] text-[1.25em] py-[10px] px-[16px] rounded-full h-[50px] font-medium text-white hover:text-black flex items-center cursor-pointer tracking-normal">
+            <div className="border-[1px] whitespace-nowrap border-[#0386ff] bg-[#0386ff] text-[1.25em] py-[10px] px-[16px] rounded-full h-[50px] font-medium text-white hover:text-black flex items-center cursor-pointer tracking-normal w-fit">
               Lets Get Started
             </div>
           </div>
