@@ -23,10 +23,10 @@ const LandingPage = () => {
       <SupportPart />
       <Divider />
       <GetStartedPart />
-      {/*<FaqPart />
+      <FaqPart />
       <ContactInfoPart />
       <Divider />
-      <FooterPart /> */}
+      <FooterPart />
       <FixedMenu />
       <ScrollTop />
     </div>
