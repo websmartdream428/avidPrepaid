@@ -11,7 +11,7 @@ const GetStartedPart = () => {
           <img
             src={cardImg}
             alt="cardImg"
-            className="card-img w-[25em] m-auto"
+            className="card-img sm:w-[25em] w-[18em] m-auto"
           />
           <h1 className="text-[#0386ff] text-[2.4em] leading-[44px] m-0 mb-8 -tracking-[1px]">
             Lets Get Started
@@ -21,13 +21,13 @@ const GetStartedPart = () => {
               "It's easy. Simply enter your phone number in the field below to receive a text code to start the process."
             }
           </p>
-          <div className="flex gap-[15px] justify-center items-center">
+          <div className="flex gap-[15px] lg:flex-row flex-col justify-center items-center">
             <input
               type="text"
               placeholder="Enter Mobile Number"
               className="border-[#0386ff] border-[1px] h-[50px] outline-none bg-white text-black text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#0386ff]"
             />
-            <div className="border-[1px] border-[#0386ff] bg-[#0386ff] text-[1.25em] py-[10px] px-[16px] rounded-full h-[50px] font-medium text-white hover:text-black flex items-center cursor-pointer tracking-normal">
+            <div className="border-[1px] whitespace-nowrap border-[#0386ff] bg-[#0386ff] text-[1.25em] py-[10px] px-[16px] rounded-full h-[50px] font-medium text-white hover:text-black flex items-center cursor-pointer tracking-normal">
               Lets Get Started
             </div>
           </div>
