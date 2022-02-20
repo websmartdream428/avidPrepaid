@@ -7,18 +7,18 @@
   transition: all 0.2s;
 }
 
-@media screen and (min-width: 1024px) {
-  .landing-intro {
-    background-position-x: revert;
-  }
-}
-
 .landing-intro {
   background: url("../image/landing-header.png");
   background-size: cover;
-  background-position-x: 100%;
+  background-position-x: revert;
   background-repeat: no-repeat;
   background-color: rgb(3, 134, 255);
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-intro {
+    background-position-x: 100% !important;
+  }
 }
 
 .landing-header::after,
