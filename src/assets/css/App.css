@@ -3,6 +3,16 @@
   src: url("../fonts/FontsFree-Net-FuturaStd-Book.ttf");
 }
 
+* {
+  transition: all 0.3s;
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-intro {
+    background-position-x: revert;
+  }
+}
+
 .landing-intro {
   background: url("../image/landing-header.png");
   background-size: cover;
@@ -136,4 +146,23 @@ p {
   opacity: 0.75;
   background: #404040;
   border-radius: 7px 7px 0 0;
+}
+
+.intro-content {
+  width: 70%;
+}
+
+@media screen and (max-width: 1440px) {
+  .intro-content {
+    width: 85% !important;
+  }
+  .intro-img {
+    width: 45vmin !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .intro-img {
+    width: auto !important;
+  }
 }

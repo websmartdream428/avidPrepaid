@@ -1,11 +1,10 @@
 import logo from "assets/image/logo.png";
 import imacPhone from "assets/image/imac-phone.png";
-import Container from "components/Container";
 
 const IntroPart = () => {
   return (
-    <div className="landing-intro py-16">
-      <div className="max-w-[1400px] flex gap-5 justify-center items-center landing-header mb-4 m-auto">
+    <div className="landing-intro py-[4%]">
+      <div className="max-w-[1400px] w-[90%] lg:flex-row flex-col flex gap-5 justify-center items-center landing-header mb-4 m-auto">
         <img
           src={logo}
           alt="logo"
@@ -16,38 +15,36 @@ const IntroPart = () => {
           Let's Get Started
         </div>
       </div>
-      <Container>
-        <div className="flex items-center -mx-[15px] tracking-[2px] text-white">
-          <div>
-            <h1 className="text-[4em] font-normal mb-[30px] leading-[80px]">
-              Get your
-              <br /> government benefits up to{" "}
-              <b className="font-black">6 days early!</b>
-              <sup className="text-[13px] -top-[3em]">1</sup>
-            </h1>
-            <p className="text-white text-[2em] text-left leading-[24px] tracking-tight mb-[5%] font-semibold">
-              Let's Get Started
-            </p>
-            <div className="flex gap-[15px] items-center">
-              <input
-                type="text"
-                placeholder="Enter Mobile Number"
-                className="border-white border-[1px] h-[50px] outline-none bg-white text-black text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#043e93]"
-              />
-              <div className="border-[1px] border-white bg-[#043e93] text-[22px] py-[10px] px-[16px] rounded-full h-[50px] font-bold text-white hover:text-black flex items-center cursor-pointer tracking-normal">
-                Lets Get Started
-              </div>
+      <div className="flex items-center m-auto tracking-[2px] text-white intro-content lg:flex-row flex-col">
+        <div>
+          <h1 className="font-normal mb-[30px] md:leading-[80px] leading-[70px] md:text-[4em] text-[3em]">
+            Get your
+            <br /> government benefits up to{" "}
+            <b className="font-black">6 days early!</b>
+            <sup className="text-[13px] -top-[3em]">1</sup>
+          </h1>
+          <p className="text-white text-[2em] text-left leading-[24px] tracking-tight mb-[5%] font-semibold">
+            Let's Get Started
+          </p>
+          <div className="flex gap-[15px] md:flex-row flex-col md:items-center items-start">
+            <input
+              type="text"
+              placeholder="Enter Mobile Number"
+              className="border-white border-[1px] h-[50px] outline-none bg-white text-black text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#043e93]"
+            />
+            <div className="border-[1px] whitespace-nowrap border-white bg-[#043e93] text-[22px] py-[10px] px-[16px] rounded-full h-[50px] font-bold text-white hover:text-black flex items-center cursor-pointer tracking-normal">
+              Lets Get Started
             </div>
           </div>
-          <div>
-            <img
-              src={imacPhone}
-              alt="imacPhone"
-              className="max-w-[65vmin] mt-[15px]"
-            />
-          </div>
         </div>
-      </Container>
+        <div>
+          <img
+            src={imacPhone}
+            alt="imacPhone"
+            className="max-w-[65vmin] mt-[15px] intro-img"
+          />
+        </div>
+      </div>
     </div>
   );
 };

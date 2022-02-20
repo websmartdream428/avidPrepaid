@@ -17,7 +17,7 @@ const LandingPage = () => {
   return (
     <div>
       <IntroPart />
-      <AboutPart />
+      {/* <AboutPart />
       <ServicePart />
       <BenefitPart />
       <SupportPart />
@@ -26,7 +26,7 @@ const LandingPage = () => {
       <FaqPart />
       <ContactInfoPart />
       <Divider />
-      <FooterPart />
+      <FooterPart /> */}
       <FixedMenu />
       <ScrollTop />
     </div>
