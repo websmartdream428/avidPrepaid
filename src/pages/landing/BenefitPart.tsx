@@ -5,16 +5,20 @@ import benefitImg from "assets/image/benefit.png";
 const BenefitPart = () => {
   return (
     <div className="landing-benefits py-16">
-      <div className="max-w-[1280px] w-[95%] items-center flex m-auto">
-        <div className="relative py-[3%] h-fit rounded-[100px] left-[5%] bg-[#f0f2f6] text-center">
-          <img src={benefitImg} alt="benefitImg" className="w-[85%] m-auto" />
+      <div className="max-w-[1280px] md:w-[80%] w-[90%] items-center lg:flex-row flex-col flex m-auto">
+        <div className="relative py-[3%] w-full h-fit lg:rounded-[100px] sm:rounded-[60px] rounded-[30px] lg:left-[5%] bg-[#f0f2f6] text-center lg:mb-0 mb-[5%]">
+          <img
+            src={benefitImg}
+            alt="benefitImg"
+            className="lg:w-[85%] w-[95%] m-auto"
+          />
           <p className="m-0 px-[7%] text-[10px] leading-[35px] font-medium text-[#1d2127]">
             December 2021 SSI and VA payments were made available to recipients
             on December 1st, 2021 by most banks and Direct Express<sup>®</sup>
           </p>
         </div>
-        <div className="max-w-[755px] rounded-[100px] py-[5%] px-[8%] bg-white">
-          <h1 className="text-[4em] mb-5 font-normal leading-[60px] text-[#0386ff] -tracking-[1px]">
+        <div className="lg:max-w-[755px] w-full lg:rounded-[100px] sm:rounded-[60px] rounded-[30px] py-[5%] px-[8%] bg-white">
+          <h1 className="md:text-[4em] sm:text-[3em] text-[2em] mb-5 font-normal  sm:leading-[60px] leading-[40px] text-[#0386ff] -tracking-[1px]">
             Your Federal Benefits Made Easy
           </h1>
           <p className="text-[1.1em] text-[#1d2127] leading-[30px] mb-5">

@@ -19,8 +19,8 @@ const LandingPage = () => {
       <IntroPart />
       <AboutPart />
       <ServicePart />
-      {/*<BenefitPart />
-      <SupportPart />
+      <BenefitPart />
+      {/*<SupportPart />
       <Divider />
       <GetStartedPart />
       <FaqPart />
