@@ -1,5 +1,6 @@
 import Divider from "components/Divider";
 import FixedMenu from "components/FixedMenu";
+import ScrollTop from "components/ScrollTop";
 import React from "react";
 import AboutPart from "./AboutPart";
 import BenefitPart from "./BenefitPart";
@@ -27,6 +28,7 @@ const LandingPage = () => {
       <Divider />
       <FooterPart />
       <FixedMenu />
+      <ScrollTop />
     </div>
   );
 };

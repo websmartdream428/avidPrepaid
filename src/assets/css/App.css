@@ -131,3 +131,9 @@ p {
 .landing-fixed-menu > a > span {
   margin-left: 25px;
 }
+
+.scroll-top-btn {
+  opacity: 0.75;
+  background: #404040;
+  border-radius: 7px 7px 0 0;
+}

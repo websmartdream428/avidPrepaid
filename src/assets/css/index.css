@@ -24,3 +24,7 @@ h1,
 a {
   font-family: "Futura Std Book" !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}
