@@ -18,8 +18,8 @@ const LandingPage = () => {
     <div>
       <IntroPart />
       <AboutPart />
-      {/* <ServicePart />
-      <BenefitPart />
+      <ServicePart />
+      {/*<BenefitPart />
       <SupportPart />
       <Divider />
       <GetStartedPart />
