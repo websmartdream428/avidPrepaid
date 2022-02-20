@@ -7,8 +7,8 @@ const SupportPart = () => {
   return (
     <div className="landing-support py-[4%]">
       <Container>
-        <div className="flex items-center">
-          <div className="pl-[3%] w-[45%]">
+        <div className="flex items-center flex-col lg:flex-row">
+          <div className="pl-[3%] lg:w-[45%]">
             <h1 className="text-[#0386ff] leading-[44px] text-[2.4em] mb-8 -tracking-[1px]">
               {"Superior Service Without The Wait & Award Winning Support"}
             </h1>
@@ -49,11 +49,11 @@ const SupportPart = () => {
               </a>
             </div>
           </div>
-          <div className="w-[55%]">
+          <div className="lg:w-[55%] lg:mt-0 mt-[5%]">
             <img
               src={supportImg}
               alt="supportImg"
-              className="relative left-[100px]"
+              className="relative lg:left-[100px]"
             />
           </div>
         </div>
