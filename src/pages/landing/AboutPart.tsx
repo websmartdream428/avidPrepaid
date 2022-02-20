@@ -12,16 +12,16 @@ const AboutPart = () => {
           }
         </p>
       </Container>
-      <div className="flex landing-about justify-center items-center pb-[236px] pt-16 bg-[#f3f3f3]">
-        <div>
+      <div className="flex lg:flex-row flex-col landing-about justify-center items-center lg:pb-[236px] pb-[10%] lg:pt-16 pt-[10%] bg-[#f3f3f3]">
+        <div className="lg:p-auto p-[7%]">
           <img
             src={aboutImg}
-            className="w-[640px] relative top-[40px] left-[8em]"
+            className="w-[640px] relative lg:top-[40px] lg:left-[8em]"
             alt="aboutImg"
           />
         </div>
-        <div className="bg-white rounded-[150px] py-[95px] px-[175px] max-w-[865px]">
-          <h1 className="text-[#0386ff] text-[2.4em] leading-[44px] mb-8 m-0">
+        <div className="bg-white lg:rounded-[150px] rounded-[60px] lg:py-[95px] lg:px-[175px] p-[10%] lg:w-[60%] w-[85%] max-w-[865px]">
+          <h1 className="text-[#0386ff] md:text-[2.4em] text-[2em] leading-[44px] mb-8 m-0">
             Avid Prepaid
             <br /> Digital Banking at its Best
           </h1>
@@ -45,7 +45,7 @@ const AboutPart = () => {
           </ul>
           <a
             href="#faq"
-            className="flex rounded-full text-[1.1em] justify-center bg-[#0583e9] text-white h-[50px] p-3 w-[170px] mt-5 ml-[25px]"
+            className="flex rounded-full text-[1.1em] justify-center bg-[#0583e9] text-white h-[50px] p-3 w-[170px] mt-5 ml-[5%]"
           >
             Learn More
           </a>

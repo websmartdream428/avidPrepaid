@@ -56,14 +56,12 @@ const ScrollTop = () => {
   };
 
   return (
-    <>
-      <div
-        className="fixed bottom-0 right-3 scroll-top-btn text-white p-4"
-        onClick={scrollToTop}
-      >
-        <FaChevronUp />
-      </div>
-    </>
+    <div
+      className="md:block hidden fixed bottom-0 right-3 scroll-top-btn text-white p-4"
+      onClick={scrollToTop}
+    >
+      <FaChevronUp />
+    </div>
   );
 };
 export default ScrollTop;

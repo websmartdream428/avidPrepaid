@@ -17,8 +17,8 @@ const LandingPage = () => {
   return (
     <div>
       <IntroPart />
-      {/* <AboutPart />
-      <ServicePart />
+      <AboutPart />
+      {/* <ServicePart />
       <BenefitPart />
       <SupportPart />
       <Divider />
