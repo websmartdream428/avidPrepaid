@@ -23,7 +23,7 @@ const ServiceCard = (props: any) => {
 
 const ServicePart = () => {
   return (
-    <div className="md:py-16 py-3 w-[90vw] m-auto md:px-[15px]">
+    <div id="services" className="md:py-16 py-3 w-[90vw] m-auto md:px-[15px]">
       <div className="flex justify-evenly flex-wrap mt-[42px]">
         <ServiceCard img={serviceImg1} title="Mobile Banking">
           <ul className="list-disc pl-[35px] mb-[10px] service-card-list">

@@ -132,7 +132,7 @@ const FaqPart = () => {
                   your account?
                 </strong>{" "}
                 <a
-                  href="#"
+                  href="https://google.com"
                   className="text-[#0386ff] hover:underline"
                   target="_blank"
                   rel="noreferrer"
@@ -142,12 +142,7 @@ const FaqPart = () => {
               </p>
               <p className="text-[1.1em]">
                 <strong>Do you want to learn more? </strong>
-                <a
-                  href="#"
-                  className="text-[#0386ff] hover:underline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="#fap" className="text-[#0386ff] hover:underline">
                   Learn More
                 </a>
               </p>

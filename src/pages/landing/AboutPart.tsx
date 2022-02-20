@@ -12,7 +12,10 @@ const AboutPart = () => {
           }
         </p>
       </Container>
-      <div className="flex lg:flex-row flex-col landing-about justify-center items-center lg:pb-[236px] pb-[10%] lg:pt-16 pt-[10%] bg-[#f3f3f3]">
+      <div
+        id="about"
+        className="flex lg:flex-row flex-col landing-about justify-center items-center lg:pb-[236px] pb-[10%] lg:pt-16 pt-[10%] bg-[#f3f3f3]"
+      >
         <div className="lg:p-0 p-[7%]">
           <img
             src={aboutImg}
