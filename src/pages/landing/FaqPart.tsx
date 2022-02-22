@@ -99,7 +99,7 @@ const FaqPart = () => {
           <h1 className="text-center text-[#0386ff] text-[2.4em] font-bold leading-[44px] mt-[3%] mb-[32px]">
             Frequently Asked Questions
           </h1>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col faq-container">
             {faqData.map((item: any, key: any) => (
               <FaqCard key={key} id={key} title={item.title} text={item.text} />
             ))}
@@ -121,11 +121,11 @@ const FaqPart = () => {
           <h1 className="text-center mt-[5%] font-extrabold text-[#0386ff] text-[2.4em] leading-][44px] mb-8 -tracking-[1px]">
             Lets Get Started
           </h1>
-          <div className="md:flex-row flex-col flex items-center justify-center md:gap-[45px] gap-[20px]">
+          <div className="md:flex-row flex-col flex items-center justify-center">
             <input
               type="text"
               placeholder="Enter Mobile Number"
-              className="border-[#0386ff] border-[1px] h-[50px] outline-none bg-white text-black text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#0386ff]"
+              className="border-[#0386ff] border-[1px] md:mr-[15px] md:mb-0 mr-0 mb-[15px]  h-[50px] outline-none bg-white text-black text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#0386ff]"
             />
             <div className="border-[1px] whitespace-nowrap border-[#0386ff] bg-[#0386ff] text-[1.25em] py-[10px] px-[16px] rounded-full h-[50px] font-medium text-white hover:text-black flex items-center cursor-pointer tracking-normal w-fit">
               Lets Get Started
@@ -133,10 +133,10 @@ const FaqPart = () => {
           </div>
         </div>
         <div>
-          <div className="contact-tab-header flex gap-[2px]">
+          <div className="contact-tab-header flex">
             <div
               onClick={() => setTab(1)}
-              className={`border-[1px] border-b-0  ${
+              className={`border-[1px] border-b-0 mr-[2px] ${
                 tab === 2
                   ? "bg-[#3984ed] text-white border-[#3984ed]"
                   : "border-[#ddd] text-[#1d2127] bg-white"
@@ -157,12 +157,12 @@ const FaqPart = () => {
           </div>
           <div className="contact-tab-body border-[#ddd] border-[1px]">
             <div
-              className={`flex py-[2%] px-[40px] md:flex-row flex-col gap-4 ${
+              className={`flex py-[2%] px-[40px] md:flex-row flex-col ${
                 tab === 1 ? "opacity-100 block" : "opacity-0 hidden"
               }`}
             >
-              <div className="flex flex-col md:w-[50%] w-full gap-4">
-                <p className="flex items-center">
+              <div className="flex flex-col md:w-[50%] w-full md:mr-4 md:mb-0 mr-0">
+                <p className="flex items-center mb-4">
                   <FaPhoneAlt fill="#0386ff" size={20} />
                   <span className="ml-3 text-[1.1em]">
                     <strong>{"Call us at: "}</strong>{" "}
@@ -176,7 +176,7 @@ const FaqPart = () => {
                     </a>
                   </span>
                 </p>
-                <p className="flex items-center">
+                <p className="flex items-center mb-4">
                   <HiMail fill="#0386ff" size={20} />
                   <span className="ml-3 text-[1.1em]">
                     <a
@@ -189,7 +189,7 @@ const FaqPart = () => {
                     </a>
                   </span>
                 </p>
-                <p className="flex items-center">
+                <p className="flex items-center mb-4">
                   <FaMapMarkerAlt fill="#0386ff" size={20} />
                   <span className="ml-3 text-[1.1em]">
                     <strong>{"Address: P.O.:"}</strong>
@@ -197,17 +197,17 @@ const FaqPart = () => {
                   </span>
                 </p>
               </div>
-              <div className="flex flex-col md:w-[50%] w-full gap-4">
-                <p>
+              <div className="flex flex-col md:w-[50%] w-full md:mr-4 md:mb-0 mr-0 mb-4">
+                <p className="mb-4">
                   <strong>{"Business Hours:"}</strong>
                   {
                     " Monday - Friday: 7AM to 12AM (EST) Saturday & Sunday: 9AM to 7PM (EST)"
                   }
                 </p>
-                <p className="flex gap-4 text-[20px]">
+                <p className="flex text-[20px]">
                   <FaFacebookF fill="#0386ff" />
-                  <FaInstagram fill="#0386ff" />
-                  <FaYoutube fill="#0386ff" />
+                  <FaInstagram fill="#0386ff" className="ml-4" />
+                  <FaYoutube fill="#0386ff" className="ml-4" />
                 </p>
               </div>
             </div>

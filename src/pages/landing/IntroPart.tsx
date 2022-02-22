@@ -5,7 +5,7 @@ import Container from "components/Container";
 const IntroPart = () => {
   return (
     <div className="landing-intro py-[4%]">
-      <div className="max-w-[1400px] w-[90%] lg:flex-row flex-col flex gap-5 justify-center items-center landing-header mb-4 m-auto">
+      <div className="max-w-[1400px] w-[90%] lg:flex-row flex-col flex justify-center items-center landing-header mb-4 m-auto">
         <img
           src={logo}
           alt="logo"
@@ -28,11 +28,11 @@ const IntroPart = () => {
             <p className="text-white text-[2em] text-left leading-[24px] tracking-tight mb-[5%] font-semibold">
               Let's Get Started
             </p>
-            <div className="flex gap-[15px] md:flex-row flex-col md:items-center items-start">
+            <div className="flex md:flex-row flex-col md:items-center items-start">
               <input
                 type="text"
                 placeholder="Enter Mobile Number"
-                className="border-white border-[1px] h-[50px] outline-none bg-white text-black text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#043e93]"
+                className="border-white border-[1px] md:mr-[15px] md:mb-0 mr-0 mb-[15px] h-[50px] outline-none bg-white text-black text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#043e93]"
               />
               <div className="border-[1px] whitespace-nowrap border-white bg-[#043e93] text-[22px] py-[10px] px-[16px] rounded-full h-[50px] font-bold text-white hover:text-black flex items-center cursor-pointer tracking-normal">
                 Lets Get Started

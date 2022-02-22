@@ -23,7 +23,7 @@ const AboutPart = () => {
             alt="aboutImg"
           />
         </div>
-        <div className="bg-white lg:rounded-[150px] rounded-[60px] lg:py-[95px] lg:px-[175px] p-[10%] lg:w-[60%] w-[85%] max-w-[865px]">
+        <div className="bg-white md:rounded-[50px] rounded-[30px] lg:py-[95px] lg:px-[175px] p-[10%] lg:w-[60%] w-[85%] max-w-[865px]">
           <h1 className="text-[#0386ff] md:text-[2.4em] text-[2em] leading-[44px] mb-8 m-0">
             Avid Prepaid
             <br /> Digital Banking at its Best
