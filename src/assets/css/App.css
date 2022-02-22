@@ -147,19 +147,6 @@ p {
   border-radius: 7px 7px 0 0;
 }
 
-.intro-content {
-  width: 70%;
-}
-
-@media screen and (max-width: 1440px) {
-  .intro-content {
-    width: 85% !important;
-  }
-  .intro-img {
-    width: 45vmin !important;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .intro-img {
     width: auto !important;
@@ -171,6 +158,15 @@ p {
   width: fit-content;
   border-radius: 15px 15px 0 0;
   margin-bottom: -1px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-tab-header > div {
+    padding: 10px 30px;
+    width: fit-content;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: -1px;
+  }
 }
 
 .contact-tab-body {

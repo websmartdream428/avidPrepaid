@@ -133,7 +133,7 @@ const FaqPart = () => {
           </div>
         </div>
         <div>
-          <div className="contact-tab-header flex md:flex-row flex-col gap-[2px]">
+          <div className="contact-tab-header flex gap-[2px]">
             <div
               onClick={() => setTab(1)}
               className={`border-[1px] border-b-0  ${
