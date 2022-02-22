@@ -8,7 +8,7 @@ import Container from "components/Container";
 
 const ServiceCard = (props: any) => {
   return (
-    <div className="rounded-[75px] bg-[#f0f2f6] w-full max-w-[395px] mb-5">
+    <div className="rounded-[30px] bg-[#f0f2f6] w-full max-w-[395px] mb-5">
       <div className="-mt-[2.5em] pt-0 p-[25px]">
         <div className="h-[200px]">
           <img src={props.img} alt="Service" className="m-auto pb-[14px]" />
