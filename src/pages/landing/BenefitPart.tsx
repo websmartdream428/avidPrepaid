@@ -6,7 +6,7 @@ const BenefitPart = () => {
   return (
     <div className="landing-benefits py-16">
       <div className="max-w-[1280px] md:w-[80%] w-[90%] items-center lg:flex-row flex-col flex m-auto">
-        <div className="relative py-[3%] w-full h-fit lg:rounded-[100px] sm:rounded-[60px] rounded-[30px] lg:left-[5%] bg-[#f0f2f6] text-center lg:mb-0 mb-[5%]">
+        <div className="relative py-[3%] w-full h-fit lg:rounded-[50px] sm:rounded-[30px] rounded-[30px] lg:left-[5%] bg-[#f0f2f6] text-center lg:mb-0 mb-[5%]">
           <img
             src={benefitImg}
             alt="benefitImg"
@@ -17,7 +17,7 @@ const BenefitPart = () => {
             on December 1st, 2021 by most banks and Direct Express<sup>®</sup>
           </p>
         </div>
-        <div className="lg:max-w-[755px] w-full lg:rounded-[100px] sm:rounded-[60px] rounded-[30px] py-[5%] px-[8%] bg-white">
+        <div className="lg:max-w-[755px] w-full lg:rounded-[50px] sm:rounded-[30px] rounded-[30px] py-[5%] px-[8%] bg-white">
           <h1 className="md:text-[4em] sm:text-[3em] text-[2em] mb-5 font-normal  sm:leading-[60px] leading-[40px] text-[#0386ff] -tracking-[1px]">
             Your Federal Benefits Made Easy
           </h1>
