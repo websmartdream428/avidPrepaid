@@ -129,7 +129,7 @@ const GetStartedPart = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="text-left w-[70%] mx-auto">
+                <div className="text-left sm:w-[70%] w-full mx-auto">
                   <p className="pl-3 pb-2 text-gray-700">Text Code *</p>
                   <input
                     type="text"
