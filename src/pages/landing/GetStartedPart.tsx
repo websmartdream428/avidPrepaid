@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
+import InputMask from "react-input-mask";
 import Container from "components/Container";
 import cardImg from "assets/image/Avid_Card_Slant.png";
 
 const GetStartedPart = () => {
+  const [phone, setPhone] = useState("");
   return (
     <div className="mt-[15px] pb-[4%] relative">
       <Container>
@@ -22,10 +24,13 @@ const GetStartedPart = () => {
             }
           </p>
           <div className="flex lg:flex-row flex-col justify-center items-center">
-            <input
-              type="text"
+            <InputMask
+              value={phone}
               placeholder="Enter Mobile Number"
-              className="border-[#0386ff] lg:mr-[15px] lg:mb-0 mr-0 mb-[15px]  border-[1px] h-[50px] outline-none bg-white text-black text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#0386ff]"
+              onChange={(e) => setPhone(e.target.value)}
+              mask="(999) 999-9999"
+              // maskChar=" "
+              className="border-[#0386ff] lg:mr-[15px] lg:mb-0 mr-0 mb-[15px]  border-[1px] h-[50px] outline-none bg-white text-[#777] text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#0386ff]"
             />
             <div className="border-[1px] whitespace-nowrap border-[#0386ff] bg-[#0386ff] text-[1.25em] py-[10px] px-[16px] rounded-full h-[50px] font-medium text-white hover:text-black flex items-center cursor-pointer tracking-normal">
               Lets Get Started

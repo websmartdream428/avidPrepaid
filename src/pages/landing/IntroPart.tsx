@@ -1,8 +1,11 @@
+import { useState } from "react";
+import InputMask from "react-input-mask";
 import logo from "assets/image/logo.png";
 import imacPhone from "assets/image/imac-phone.png";
 import Container from "components/Container";
 
 const IntroPart = () => {
+  const [phone, setPhone] = useState("");
   return (
     <div className="landing-intro py-[4%]">
       <div className="max-w-[1400px] w-[90%] lg:flex-row flex-col flex justify-center items-center landing-header mb-4 m-auto">
@@ -29,11 +32,15 @@ const IntroPart = () => {
               Let's Get Started
             </p>
             <div className="flex md:flex-row flex-col md:items-center items-start">
-              <input
-                type="text"
+              <InputMask
+                value={phone}
                 placeholder="Enter Mobile Number"
-                className="border-white border-[1px] md:mr-[15px] md:mb-0 mr-0 mb-[15px] h-[50px] outline-none bg-white text-black text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#043e93]"
+                onChange={(e) => setPhone(e.target.value)}
+                mask="(999) 999-9999"
+                // maskChar=" "
+                className="border-white border-[1px] md:mr-[15px] md:mb-0 mr-0 mb-[15px] h-[50px] outline-none bg-white text-[#777] text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#043e93]"
               />
+
               <div className="border-[1px] whitespace-nowrap border-white bg-[#043e93] text-[22px] py-[10px] px-[16px] rounded-full h-[50px] font-bold text-white hover:text-black flex items-center cursor-pointer tracking-normal">
                 Lets Get Started
               </div>

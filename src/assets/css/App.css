@@ -187,3 +187,16 @@ p {
 .faq-container > *:not(:first-child) {
   margin-top: 1.5rem;
 }
+
+.flag-dropdown {
+  display: none !important;
+}
+
+.react-tel-input {
+  width: fit-content !important;
+}
+
+.react-tel-input > .form-control {
+  padding-left: 0 !important;
+  color: black !important;
+}

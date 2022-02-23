@@ -9,6 +9,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
+import InputMask from "react-input-mask";
 
 import { FaChevronRight } from "react-icons/fa";
 
@@ -91,6 +92,7 @@ const FaqCard = (props: any) => {
 };
 
 const FaqPart = () => {
+  const [phone, setPhone] = useState("");
   const [tab, setTab] = useState(1);
   return (
     <div>
@@ -122,10 +124,13 @@ const FaqPart = () => {
             Lets Get Started
           </h1>
           <div className="md:flex-row flex-col flex items-center justify-center">
-            <input
-              type="text"
+            <InputMask
+              value={phone}
               placeholder="Enter Mobile Number"
-              className="border-[#0386ff] border-[1px] md:mr-[15px] md:mb-0 mr-0 mb-[15px]  h-[50px] outline-none bg-white text-black text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#0386ff]"
+              onChange={(e) => setPhone(e.target.value)}
+              mask="(999) 999-9999"
+              // maskChar=" "
+              className="border-[#0386ff] lg:mr-[15px] lg:mb-0 mr-0 mb-[15px]  border-[1px] h-[50px] outline-none bg-white text-[#777] text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#0386ff]"
             />
             <div className="border-[1px] whitespace-nowrap border-[#0386ff] bg-[#0386ff] text-[1.25em] py-[10px] px-[16px] rounded-full h-[50px] font-medium text-white hover:text-black flex items-center cursor-pointer tracking-normal w-fit">
               Lets Get Started
