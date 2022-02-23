@@ -60,13 +60,11 @@ const FaqCard = (props: any) => {
     console.log(faqElem.getBoundingClientRect().height);
     if (open) {
       faqContentElem.style.height = 0;
-      faqElem.style.opacity = 0;
-      faqElem.style.paddingBottom = 0;
+      faqContentElem.style.opacity = 0;
     } else {
       faqContentElem.style.height =
         faqElem.getBoundingClientRect().height + "px";
-      faqElem.style.opacity = 1;
-      faqElem.style.paddingBottom = "1.25rem";
+      faqContentElem.style.opacity = 1;
     }
     setOpen((prev) => !prev);
   };
@@ -85,7 +83,10 @@ const FaqCard = (props: any) => {
           />
         </div>
       </div>
-      <div id={"faq-content" + props.id} className="h-0 duration-500 -z-50">
+      <div
+        id={"faq-content" + props.id}
+        className="h-0 duration-500 opacity-0 -z-50"
+      >
         <p
           id={"faq" + props.id}
           dangerouslySetInnerHTML={{ __html: props.text }}
