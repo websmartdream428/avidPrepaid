@@ -75,6 +75,7 @@ const GetStartedPart = () => {
 
   const handleResend = () => {
     setInputFlag(false);
+    setCode("");
   };
 
   return (
