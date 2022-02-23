@@ -68,8 +68,7 @@ const FaqCard = (props: any) => {
   };
   return (
     <div
-      className="border-[#dbdbdb] px-7 border-[1px] rounded-[50px]"
-      style={{ contain: "content" }}
+      className="border-[#dbdbdb] cursor-pointer fap-card-wrapper px-7 border-[1px] rounded-[50px]"
       onClick={() => handleToggle(props.id)}
     >
       <div className="flex justify-between py-5 text-[1.3em] text-[#040404] font-semibold items-center">
@@ -82,7 +81,7 @@ const FaqCard = (props: any) => {
           />
         </div>
       </div>
-      <div id={"faq-content" + props.id} className="h-0 duration-500">
+      <div id={"faq-content" + props.id} className="h-0 duration-500 -z-50">
         <p
           id={"faq" + props.id}
           dangerouslySetInnerHTML={{ __html: props.text }}
