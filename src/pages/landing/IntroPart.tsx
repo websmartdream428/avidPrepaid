@@ -1,11 +1,24 @@
-import { useState } from "react";
+import { useContext } from "react";
 import InputMask from "react-input-mask";
 import logo from "assets/image/logo.png";
 import imacPhone from "assets/image/imac-phone.png";
 import Container from "components/Container";
+import PhoneNumberContext from "context/PhoneNumber";
+import PhoneCodeContext from "context/PhoneCode";
 
 const IntroPart = () => {
-  const [phone, setPhone] = useState("");
+  const { phoneNumber, setPhoneNumber } = useContext<any>(PhoneNumberContext);
+  const { setPhoneCode } = useContext<any>(PhoneCodeContext);
+
+  const handleClick = () => {
+    if (phoneNumber === "" || phoneNumber.indexOf("_") > -1) {
+      setPhoneNumber("");
+    } else {
+      setPhoneCode(true);
+      window.location.href = "#phonecode";
+    }
+  };
+
   return (
     <div className="landing-intro py-[4%]">
       <div className="max-w-[1400px] w-[90%] lg:flex-row flex-col flex justify-center items-center landing-header mb-4 m-auto">
@@ -33,15 +46,20 @@ const IntroPart = () => {
             </p>
             <div className="flex md:flex-row flex-col md:items-center items-start">
               <InputMask
-                value={phone}
+                value={phoneNumber}
                 placeholder="Enter Mobile Number"
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={(e) => {
+                  setPhoneNumber(e.target.value);
+                }}
                 mask="(999) 999-9999"
                 // maskChar=" "
                 className="border-white border-[1px] md:mr-[15px] md:mb-0 mr-0 mb-[15px] h-[50px] outline-none bg-white text-[#777] text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#043e93]"
               />
 
-              <div className="border-[1px] whitespace-nowrap border-white bg-[#043e93] text-[22px] py-[10px] px-[16px] rounded-full h-[50px] font-bold text-white hover:text-black flex items-center cursor-pointer tracking-normal">
+              <div
+                onClick={handleClick}
+                className="border-[1px] whitespace-nowrap border-white bg-[#043e93] text-[22px] py-[10px] px-[16px] rounded-full h-[50px] font-bold text-white hover:text-black flex items-center cursor-pointer tracking-normal"
+              >
                 Lets Get Started
               </div>
             </div>

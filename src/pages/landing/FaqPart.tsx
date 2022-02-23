@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Container from "components/Container";
 
 import {
@@ -12,6 +12,8 @@ import { HiMail } from "react-icons/hi";
 import InputMask from "react-input-mask";
 
 import { FaChevronRight } from "react-icons/fa";
+import PhoneNumberContext from "context/PhoneNumber";
+import PhoneCodeContext from "context/PhoneCode";
 
 const faqData = [
   {
@@ -92,8 +94,19 @@ const FaqCard = (props: any) => {
 };
 
 const FaqPart = () => {
-  const [phone, setPhone] = useState("");
   const [tab, setTab] = useState(1);
+  const { phoneNumber, setPhoneNumber } = useContext<any>(PhoneNumberContext);
+
+  const { setPhoneCode } = useContext<any>(PhoneCodeContext);
+
+  const handleGetStartedClick = () => {
+    if (phoneNumber === "" || phoneNumber.indexOf("_") > -1) {
+      setPhoneNumber("");
+    } else {
+      setPhoneCode(true);
+      window.location.href = "#phonecode";
+    }
+  };
   return (
     <div>
       <Container>
@@ -125,14 +138,17 @@ const FaqPart = () => {
           </h1>
           <div className="md:flex-row flex-col flex items-center justify-center">
             <InputMask
-              value={phone}
+              value={phoneNumber}
               placeholder="Enter Mobile Number"
-              onChange={(e) => setPhone(e.target.value)}
+              onChange={(e) => setPhoneNumber(e.target.value)}
               mask="(999) 999-9999"
               // maskChar=" "
               className="border-[#0386ff] lg:mr-[15px] lg:mb-0 mr-0 mb-[15px]  border-[1px] h-[50px] outline-none bg-white text-[#777] text-[22px] py-[10px] px-4 rounded-full min-w-[11em] max-w-[13em] placeholder:text-[#0386ff]"
             />
-            <div className="border-[1px] whitespace-nowrap border-[#0386ff] bg-[#0386ff] text-[1.25em] py-[10px] px-[16px] rounded-full h-[50px] font-medium text-white hover:text-black flex items-center cursor-pointer tracking-normal w-fit">
+            <div
+              className="border-[1px] whitespace-nowrap border-[#0386ff] bg-[#0386ff] text-[1.25em] py-[10px] px-[16px] rounded-full h-[50px] font-medium text-white hover:text-black flex items-center cursor-pointer tracking-normal w-fit"
+              onClick={handleGetStartedClick}
+            >
               Lets Get Started
             </div>
           </div>
