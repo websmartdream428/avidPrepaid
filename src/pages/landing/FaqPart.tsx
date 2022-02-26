@@ -1,16 +1,16 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import Container from "components/Container";
 
-import InputMask from "react-input-mask";
+// import InputMask from "react-input-mask";
 
 import { FaChevronRight } from "react-icons/fa";
-import PhoneNumberContext from "context/PhoneNumber";
-import PhoneCodeContext from "context/PhoneCode";
+// import PhoneNumberContext from "context/PhoneNumber";
+// import PhoneCodeContext from "context/PhoneCode";
 
 const faqData = [
   {
     title: "Why Avid ?",
-    text: 'Digital banking at its best! With Avid Prepaid, you get your payments early. By signing up for Early Access, you can receive your government benefits up to 6 days early and receive payroll up to 2 days early.<sup>1</sup> Avid Prepaid has no overdraft fees or minimum balance.<sup>2</sup> You control your account with Avid Prepaid\'s robust mobile app, security, and alert features such as real time alerts, account shield<sup>3</sup>, and transaction history. Getting started is easy, just enter your mobile number and click "Let\'s Get Started" to sign up today!',
+    text: "Digital banking at its best! With Avid Prepaid, you get your payments early. By signing up for Early Access, you can receive your government benefits up to 6 days early and receive payroll up to 2 days early.<sup>1</sup> Avid Prepaid has no overdraft fees or minimum balance.<sup>2</sup> You control your account with Avid Prepaid's robust mobile app, security, and alert features such as real time alerts, account shield<sup>3</sup>, and transaction history. Getting started is easy, just enter your mobile number and click \"Let's Get Started\" to sign up today!",
   },
   {
     title: "Which Avid Prepaid Card is right for me ?",
@@ -64,11 +64,7 @@ const FaqCard = (props: any) => {
       onClick={() => handleToggle(props.id)}
     >
       <div className="flex cursor-pointer justify-between py-5 text-xl font-semibold items-center">
-        <p
-          className="text-gray-600 hover:text-blue-500"
-        >
-          {props.title}
-        </p>
+        <p className="text-gray-600 hover:text-blue-500">{props.title}</p>
         <div className="w-[25px]">
           <FaChevronRight
             size={25}
@@ -89,19 +85,19 @@ const FaqCard = (props: any) => {
 };
 
 const FaqPart = () => {
-  const [tab, setTab] = useState(1);
-  const { phoneNumber, setPhoneNumber } = useContext<any>(PhoneNumberContext);
+  // const [tab, setTab] = useState(1);
+  // const { phoneNumber, setPhoneNumber } = useContext<any>(PhoneNumberContext);
 
-  const { setPhoneCode } = useContext<any>(PhoneCodeContext);
+  // const { setPhoneCode } = useContext<any>(PhoneCodeContext);
 
-  const handleGetStartedClick = () => {
-    if (phoneNumber === "" || phoneNumber.indexOf("_") > -1) {
-      setPhoneNumber("");
-    } else {
-      setPhoneCode(true);
-      window.location.href = "#phonecode";
-    }
-  };
+  // const handleGetStartedClick = () => {
+  //   if (phoneNumber === "" || phoneNumber.indexOf("_") > -1) {
+  //     setPhoneNumber("");
+  //   } else {
+  //     setPhoneCode(true);
+  //     window.location.href = "#phonecode";
+  //   }
+  // };
   return (
     <div id="faq">
       <Container>
@@ -117,9 +113,7 @@ const FaqPart = () => {
         </div>
         <div>
           <p className="text-lg font-medium pt-4">
-            <strong>
-              Have more Questions?&nbsp;
-            </strong>
+            <strong>Have more Questions?&nbsp;</strong>
             Find more information by&nbsp;
             <a
               href="https://google.com"

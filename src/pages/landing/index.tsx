@@ -1,7 +1,7 @@
-import Divider from "components/Divider";
-import FixedMenu from "components/FixedMenu";
-import ScrollTop from "components/ScrollTop";
 import React from "react";
+import Divider from "components/Divider";
+// import FixedMenu from "components/FixedMenu";
+import ScrollTop from "components/ScrollTop";
 import AboutPart from "./AboutPart";
 import BenefitPart from "./BenefitPart";
 import ContactInfoPart from "./ContactInfoPart";
